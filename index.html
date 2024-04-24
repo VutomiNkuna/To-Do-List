@@ -10,7 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
-    <!--Font Awesome cdn css-->
+    <!--Font Awesome cdn-->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
@@ -21,5 +21,27 @@
     <link rel="stylesheet" href="./styles.css" />
     <title>To Do List</title>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <h1>My To Do List</h1>
+    </header>
+    <form action="">
+      <input type="text" class="todo-input" />
+      <button class="todo-button" type="submit" class="todo-input">
+        <i class="fas fa-plus-circle fa-lg"></i>
+      </button>
+      <div class="Select">
+        <select name="todos" class="filter-todo">
+          <option value="all">All</option>
+          <option value="complete">Complete</option>
+          <option value="incomplete">Incomplete</option>
+        </select>
+      </div>
+    </form>
+    <div class="todo-container">
+        <ul class="todo-list">      
+        </ul>
+    </div>
+    <script src="./Script.js"></script>
+  </body>
 </html>
